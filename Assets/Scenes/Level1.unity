@@ -1278,6 +1278,11 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 798994649939596495, guid: d59fc136b0b51ab41b3a7dfbf202fdc5,
+        type: 3}
+      propertyPath: nextLevelName
+      value: Scenes/Level2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_AddedGameObjects: []
   m_SourcePrefab: {fileID: 100100000, guid: d59fc136b0b51ab41b3a7dfbf202fdc5, type: 3}

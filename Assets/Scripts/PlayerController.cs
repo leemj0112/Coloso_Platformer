@@ -1,9 +1,12 @@
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
+    public int health = 5;
+
     public float moveSpeed = 5f;
     public float jumpforce = 15f;
     public bool isGrounded;
@@ -18,6 +21,23 @@ public class PlayerController : MonoBehaviour
         Debug.Log("Start()가 출력되었습니다.");
         PlayerRB = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+    }
+
+    public void Damage(int damage)
+    {
+        Debug.Log($"{damage}를 받았다.");
+
+        health -= 1;
+        if (health < 0 ) 
+        {
+            health = 0;
+        }
+        if(health == 0) 
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
+
+        animator.SetTrigger("Hurt");
     }
 
     void Update()
