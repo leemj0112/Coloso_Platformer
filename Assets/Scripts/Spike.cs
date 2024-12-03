@@ -12,7 +12,8 @@ public class Spike : MonoBehaviour
             Debug.Log("플레이어가 가시에 충돌했습니다.");
             Debug.Log(SceneManager.GetActiveScene().buildIndex);
 
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex); //빌드된 Scene 불러오기
+            //게임오버 이벤트
+            GameManager.instanse.GameOver();
         }
     }
 }

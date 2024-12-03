@@ -32,9 +32,10 @@ public class PlayerController : MonoBehaviour
         {
             health = 0;
         }
-        if(health == 0) 
+        if(health == 0) //체력이 0이면
         {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            //게임오버 이벤트
+            GameManager.instanse.GameOver();
         }
 
         animator.SetTrigger("Hurt");
