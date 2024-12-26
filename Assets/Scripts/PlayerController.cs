@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 5f;
     public float jumpforce = 15f;
     public bool isGrounded;
+    public bool hasKey;
     public float xDerection;
 
 
