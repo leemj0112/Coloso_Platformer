@@ -374,6 +374,11 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0
       objectReference: {fileID: 0}
+    - target: {fileID: 199359977168995586, guid: 31269256cca389d4eaca33974334bd7e,
+        type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 212091394997432216, guid: 31269256cca389d4eaca33974334bd7e,
         type: 3}
       propertyPath: m_SortingOrder
@@ -388,6 +393,24 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 301779867}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &301779869 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1863248945700218, guid: 31269256cca389d4eaca33974334bd7e,
+    type: 3}
+  m_PrefabInstance: {fileID: 301779867}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &301779870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 301779869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b38b90a0ff60fa4c97f611b8dc7c344, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &303041946
 GameObject:
   m_ObjectHideFlags: 0

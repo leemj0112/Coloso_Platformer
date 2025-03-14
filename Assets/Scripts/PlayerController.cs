@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public float jumpforce = 15f;
     public bool isGrounded;
     public bool hasKey;
+    public bool hasprojecttile;
     public float xDerection;
 
 
